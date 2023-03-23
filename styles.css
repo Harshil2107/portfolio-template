@@ -201,7 +201,6 @@ ul {
   font-size: 24px;
   color: rgb(0, 90, 126);
   gap: 10vh;
-  justify-content: center;
 }
 @media screen and (max-width: 700px) {
   .primary-navigation {

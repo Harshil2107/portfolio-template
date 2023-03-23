@@ -178,7 +178,12 @@ ul {
   width: 40px;
   object-fit: cover;
 }
-
+.edu-title {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(0, 90, 126);
+  margin-bottom: 5vh;
+}
 .edu-details {
   display: flex;
   justify-content: center;
@@ -191,7 +196,13 @@ ul {
   color: rgb(0, 90, 126);
   margin-bottom: 2vh;
 }
-
+.edu-description {
+  display: flex;
+  font-size: 24px;
+  color: rgb(0, 90, 126);
+  gap: 10vh;
+  justify-content: center;
+}
 @media screen and (max-width: 700px) {
   .primary-navigation {
     position: fixed;

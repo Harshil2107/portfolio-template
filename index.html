@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="resetcss" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="nav.js" defer></script>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="logo">Portfolio</div>
+      <button
+        aria-controls="primay-navigation"
+        aria-expanded="false"
+        class="mobile-nav-toggle"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation flex"
+        >
+          <li class="options" onclick="closeMenu()">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="options" onclick="closeMenu()">
+            <a href="index.html#projects">Projects</a>
+          </li>
+          <!-- <li class="options" onclick="closeMenu()">
+            <a href="#">Skills</a>
+          </li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <div class="about">
+      <div class="about-block">
+        <h2 class="name" id="name">Name</h2>
+        <p class="info">
+          <b class="hi" id="summary">Summary</b>
+        </p>
+        <div class="btn-div">
+          <a id="resume" download="resume">
+            <button class="res-btn">
+              Resume
+              <i class="fa fa-download"></i>
+            </button>
+          </a>
+          <div id="links">
+            <div>
+              <a class="icon-btn" target="_blank" link>
+                <img
+                  class="link-icon"
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  linkIcon
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="title">Projects</div>
+      <div id="projects">
+        <div class="project-details">
+          <div class="project-title" projectName>Project Name</div>
+          <div class="project-text">
+            <div>
+              <img class="project-img" projectImage />
+            </div>
+            <div class="project-description" projectDetails>
+              Project Description
+            </div>
+          </div>
+          <div class="code-div">
+            <a class="code-btn" codeLink target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="education">
+      <div class="title">Education</div>
+      <div class="edu-details" id="edu">
+        <div>
+          <div class="start-end">
+            <div class="start" start>Start</div>
+            <p>-</p>
+            <div class="end" end>End</div>
+          </div>
+          <div class="edu-title" eduName>University</div>
+
+          <div class="edu-text">
+            <div class="edu-description" mojor>Major</div>
+          </div>
+          <div class="coursework" courseWork>Classes</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

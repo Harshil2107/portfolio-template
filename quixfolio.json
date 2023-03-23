@@ -1,0 +1,98 @@
+{
+    "id": "hashiru-template",
+    "name": "Hashiru Template",
+    "description": "This is a Hashiru template",
+    "image": "",
+    "schema": {
+        "cloneName": {
+            "type": "string",
+            "page": "index.html",
+            "default": "hashiru-template"
+        },
+        "name": {
+            "type": "string",
+            "page": "index.html",
+            "default": ""
+        },
+        "summary": {
+            "type": "string",
+            "page": "index.html",
+            "default": ""
+        },
+        "resume": {
+            "type": "link",
+            "page": "index.html",
+            "default": ""
+        },
+        "education": {
+            "type": "array",
+            "page": "index.html",
+            "items": {
+                "university": {
+                    "type": "string",
+                    "default": ""
+                },
+                "startYear": {
+                    "type": "string",
+                    "default": ""
+                },
+                "endYear": {
+                    "type": "string",
+                    "default": ""
+                },
+                "major": {
+                    "type": "string",
+                    "default": ""
+                },
+                "gpa": {
+                    "type": "integer",
+                    "default": 0
+                },
+                "addInfo": {
+                    "type": "string",
+                    "default": ""
+                },
+                "releventCoursework": {
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "projects": {
+            "type": "array",
+            "page": "index.html",
+            "items": {
+                "projectName": {
+                    "type": "string",
+                    "default": ""
+                },
+                "projectDetails": {
+                    "type": "string",
+                    "default": ""
+                },
+                "codeLink": {
+                    "type": "link",
+                    "default": ""
+                },
+                "projectImage": {
+                    "type": "image",
+                    "default": ""
+                }
+            }
+        },
+        "links": {
+            "type": "array",
+            "page": "index.html",
+            "items": {
+                "linkIcon": {
+                    "type": "image",
+                    "default": ""
+                },
+                "link": {
+                    "type": "link",
+                    "default": ""
+                }
+            }
+        }
+    }
+}
